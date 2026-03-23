@@ -1,0 +1,59 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: helvetica;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333;
+}
+
+.margen{
+  padding: 15px;
+}
+
+.ancho{
+  max-width: 1200px;
+  margin: auto;
+}
+
+.centrar{
+  text-align: center;
+}
+
+.contenedor_formulario{
+  margin: auto;
+  background-color: #727962e5;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.celdas{
+  padding: 10px;
+  width: 500px;
+  border: 1px #B3B2B2 solid;
+}
+
+.celda_comentario{
+  width: 500px;
+  height: 200px;
+  font-size: 16px;
+  font-family: Helvetica;
+  padding: 10px;
+  resize: none;
+  border: 1px #AEAEAE solid;
+}
+
+.btn_enviarrojo{
+  padding: 10px 30px;
+  background-color: rgb(161, 15, 15);
+  border-radius: 10px;
+}
+
+.alerta:focus{
+  border-style: none;
+  background-color: #a5ddf5;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="contenedor_formulario margen ancho">
+    <form action="loquesea.php" id="contacto" name="formulariocontacto">
+      <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="celdas "><br>
+      <input type="email" name="correo" id="correo" placeholder="*Correo" class="celdas alerta"><br>
+      <input type="tel" name="telefono" id="telefono" placeholder="*Celular" class="celdas alerta"><br>
+      <textarea name="comentarios" id="" placeholder="Comentarios" class="celda_comentario"></textarea><br>
+
+      <button type="button" class="btn_enviarrojo" onclick="valida_enviar()">Enviar</button>
+    </form>
+  </div>
+
+  <script>
+    function valida_enviar(){
+      if(document.getElementById("correo").value.length == 0){
+        alert("Tienes que escribir tu CORREO")
+        document.getElementById("correo").focus();
+        return 0;
+      }
+      if(document.getElementById("telefono").value.length == 0){
+        alert("Tienes que escribir tu NUMERO")
+        document.getElementById("telefono").focus();
+        return 0;
+      }
+    document.formulariocontacto.submit()
+    }
+
+
+  </script>
+</body>
+
+
+</html>
